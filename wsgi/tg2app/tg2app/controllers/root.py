@@ -40,6 +40,7 @@ class RootController(BaseController):
     @expose('tg2app.templates.index')
     def index(self):
         """Handle the front-page."""
+        redirect('/MajorLazor.html')
         return dict(page='index')
 
     @expose('tg2app.templates.about')
